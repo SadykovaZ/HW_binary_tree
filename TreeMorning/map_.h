@@ -21,7 +21,7 @@ public:
 	map_();
 	void insert(const T1& key, const T2& value);
 	node<T1, T2>* min(node<T1, T2>* nd);
-	node<T1,T2>*delNd(const T1 key, const T2 value);
+	node<T1, T2>*delNd(node<T1, T2> *nd, const T1 key);
 	
 
 	T2& find(const T1& key);
@@ -85,9 +85,9 @@ inline node<T1, T2>* map_<T1, T2>::min(node<T1, T2>* nd)
 }
 
 template<class T1, class T2>
-node<T1, T2>* map_<T1, T2>::delNd(const T1 key, const T2 value)
+node<T1, T2>* map_<T1, T2>::delNd(node<T1,T2> *root, const T1 key)
 {
-	if (value == nullptr)
+	if (root == nullptr)
 		return root;
 	if (key < root->key)
 		root->left = delNd(root->left, key);

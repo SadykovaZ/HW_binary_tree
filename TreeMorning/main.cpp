@@ -34,7 +34,7 @@ void main()
 		m.print();
 		
 		cout << endl;
-		m.delNd();
+		//m.delNd(m, 10);
 		/*cout << "\n--\n";
 		m2.print();*/
 	//}

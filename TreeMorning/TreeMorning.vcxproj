@@ -116,7 +116,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="map_.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="map_.h" />
